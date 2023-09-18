@@ -1,7 +1,7 @@
 
 iinclude <stdarg.h>
 , welcome to our first ALX group Project. This project is about recreating the C library function printf for learning purposes.
-The custom _printf() was developed by cohort #17 students Geoffrey Kirui and Anns Rutto.
+The custom _printf() was developed by cohort #18 student  AbdulRasheed Raji & Ande Tyhalithi
 
 ### _printf() in the C Programming Language
 This project is about recreating the C library function printf. The function printf sends formatted output to `stdout` (standard output stream) by formatting the argument(s) passed in and converting the arguments(s) into a character string. This version will be used as `_printf`.
