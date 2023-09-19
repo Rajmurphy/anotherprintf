@@ -11,6 +11,5 @@
 int _printf(const char *format, ...);
 int _pchar(char a);
 int _myput(const char *str);
-int print_char(va_list types, char buffer[],int flags, int width, int precision, int size)
 
 #endif
