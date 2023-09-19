@@ -11,6 +11,5 @@
 int _printf(const char *format, ...);
 int _pchar(char a);
 int _myput(const char *str);
-int print_size(const char *format, int *li);
 
 #endif
