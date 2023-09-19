@@ -9,16 +9,15 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int i;
-	unsigned int str_count;
-	unsigned int count = 0;
+	unsigned int i, str_count, count = 0;
 
 	va_list welc;
 
-	va_start(welc, *format);
+	if (format == NULL)
+		return (-1);
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
-
+	va_start(welc, *format);
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
@@ -38,7 +37,8 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
-			_pchar('%');
+			_myput("%%");
+			count++;
 		}
 		count += 1;
 	}
