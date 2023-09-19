@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * pchar - print a character
+ * _pchar - print a character
  * @a: parmeter
- * Return - the result
+ * Return: the result
  */
 
 int _pchar(char a)

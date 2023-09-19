@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _myputs - a functon to return a string
+ * _myput - a functon to return a string
  * @str: parameter
- * Return - 0 if succesful
+ * Return: 0 if succesful
  */
 
 int _myput(const char *str)
