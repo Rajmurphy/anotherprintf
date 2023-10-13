@@ -8,11 +8,14 @@
 
 int _myput(const char *str)
 {
-	int increment;
+	int count = 0;
 
-	for (increment = 0; str[increment] != '\0'; increment++)
+	if (c)
 	{
-		_pchar(str[increment]);
+		for (count =0; c[count] != NULL; count++)
+		{
+			_pchar(c[count]);
+		}
 	}
-	return (increment);
+	return (count);
 }

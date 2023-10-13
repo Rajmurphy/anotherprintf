@@ -37,8 +37,11 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
-			_myput("%%");
-			count++;
+			_pchar('%');
+		}
+		else if ((format[i] == '%' && format[i + 1] == 'd') || (format[i] == '%' && format[i + 1] == 'i'))
+		{
+			count += _myput(va_arg(welc, int));
 		}
 		count += 1;
 	}
